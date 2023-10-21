@@ -1,0 +1,12 @@
+P:\fork\ModeloApiNetCore\ModeloNetCoreBiblioteca\bin\Debug\net6.0\ModeloNetCoreBiblioteca.deps.json
+P:\fork\ModeloApiNetCore\ModeloNetCoreBiblioteca\bin\Debug\net6.0\ModeloNetCoreBiblioteca.dll
+P:\fork\ModeloApiNetCore\ModeloNetCoreBiblioteca\bin\Debug\net6.0\ModeloNetCoreBiblioteca.pdb
+P:\fork\ModeloApiNetCore\ModeloNetCoreBiblioteca\obj\Debug\net6.0\ModeloNetCoreBiblioteca.csproj.AssemblyReference.cache
+P:\fork\ModeloApiNetCore\ModeloNetCoreBiblioteca\obj\Debug\net6.0\ModeloNetCoreBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+P:\fork\ModeloApiNetCore\ModeloNetCoreBiblioteca\obj\Debug\net6.0\ModeloNetCoreBiblioteca.AssemblyInfoInputs.cache
+P:\fork\ModeloApiNetCore\ModeloNetCoreBiblioteca\obj\Debug\net6.0\ModeloNetCoreBiblioteca.AssemblyInfo.cs
+P:\fork\ModeloApiNetCore\ModeloNetCoreBiblioteca\obj\Debug\net6.0\ModeloNetCoreBiblioteca.csproj.CoreCompileInputs.cache
+P:\fork\ModeloApiNetCore\ModeloNetCoreBiblioteca\obj\Debug\net6.0\ModeloNetCoreBiblioteca.dll
+P:\fork\ModeloApiNetCore\ModeloNetCoreBiblioteca\obj\Debug\net6.0\refint\ModeloNetCoreBiblioteca.dll
+P:\fork\ModeloApiNetCore\ModeloNetCoreBiblioteca\obj\Debug\net6.0\ModeloNetCoreBiblioteca.pdb
+P:\fork\ModeloApiNetCore\ModeloNetCoreBiblioteca\obj\Debug\net6.0\ref\ModeloNetCoreBiblioteca.dll

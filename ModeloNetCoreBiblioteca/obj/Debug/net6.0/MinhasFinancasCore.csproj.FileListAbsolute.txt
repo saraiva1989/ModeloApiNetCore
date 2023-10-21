@@ -1,0 +1,12 @@
+P:\fork\MinhasFinancasApi\MinhasFinancasCore\bin\Debug\net6.0\MinhasFinancasCore.deps.json
+P:\fork\MinhasFinancasApi\MinhasFinancasCore\bin\Debug\net6.0\MinhasFinancasCore.dll
+P:\fork\MinhasFinancasApi\MinhasFinancasCore\bin\Debug\net6.0\MinhasFinancasCore.pdb
+P:\fork\MinhasFinancasApi\MinhasFinancasCore\obj\Debug\net6.0\MinhasFinancasCore.csproj.AssemblyReference.cache
+P:\fork\MinhasFinancasApi\MinhasFinancasCore\obj\Debug\net6.0\MinhasFinancasCore.GeneratedMSBuildEditorConfig.editorconfig
+P:\fork\MinhasFinancasApi\MinhasFinancasCore\obj\Debug\net6.0\MinhasFinancasCore.AssemblyInfoInputs.cache
+P:\fork\MinhasFinancasApi\MinhasFinancasCore\obj\Debug\net6.0\MinhasFinancasCore.AssemblyInfo.cs
+P:\fork\MinhasFinancasApi\MinhasFinancasCore\obj\Debug\net6.0\MinhasFinancasCore.csproj.CoreCompileInputs.cache
+P:\fork\MinhasFinancasApi\MinhasFinancasCore\obj\Debug\net6.0\MinhasFinancasCore.dll
+P:\fork\MinhasFinancasApi\MinhasFinancasCore\obj\Debug\net6.0\refint\MinhasFinancasCore.dll
+P:\fork\MinhasFinancasApi\MinhasFinancasCore\obj\Debug\net6.0\MinhasFinancasCore.pdb
+P:\fork\MinhasFinancasApi\MinhasFinancasCore\obj\Debug\net6.0\ref\MinhasFinancasCore.dll

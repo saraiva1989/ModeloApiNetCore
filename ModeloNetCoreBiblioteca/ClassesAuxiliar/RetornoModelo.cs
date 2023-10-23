@@ -13,7 +13,7 @@ namespace ModeloNetCoreBiblioteca.ClassesAuxiliar
         public string IdMongo { get; set; } = string.Empty;
         public string Mensagem { get; set; } = string.Empty;
         public string Exception { get; set; } = string.Empty;
-        public string url { get; set; } = string.Empty;
-        public dynamic objeto { get; set; } = new object();
+        public string Url { get; set; } = string.Empty;
+        public dynamic Objeto { get; set; } = new object();
     }
 }

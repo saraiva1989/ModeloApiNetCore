@@ -24,7 +24,7 @@ namespace ModeloNetCoreApi.Controllers
             var emailExiste = await _usuarioServico.BuscarEmail(usuario.Email);
             if (emailExiste.Status)
             {
-                emailExiste.objeto = string.Empty;
+                emailExiste.Objeto = string.Empty;
                 emailExiste.Status = false;
                 return Ok(emailExiste);
             }

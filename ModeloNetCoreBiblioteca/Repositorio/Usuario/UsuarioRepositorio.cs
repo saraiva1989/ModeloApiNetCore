@@ -21,11 +21,11 @@ namespace ModeloNetCoreBiblioteca.Repositorio.Usuario
                 var colecao = client.GetDatabase("seubanco").GetCollection<TokenModelo>("TokenModelo");
                 FilterDefinition<TokenModelo> filtro = Builders<TokenModelo>.Filter.Eq("Token", token);
                 TokenModelo retorno = await colecao.Find(filtro).FirstOrDefaultAsync();
-                return new RetornoModelo { Status = true, objeto = retorno };
+                return new RetornoModelo { Status = true, Objeto = retorno };
             }
             catch
             {
-                return new RetornoModelo { Status = false, objeto = string.Empty };
+                return new RetornoModelo { Status = false, Objeto = string.Empty };
             }
         }
 
@@ -39,7 +39,7 @@ namespace ModeloNetCoreBiblioteca.Repositorio.Usuario
                 UsuarioModelo retorno = await colecao.Find(filtro).FirstOrDefaultAsync();
                 if (retorno is null)
                     return new RetornoModelo { Status = false, Mensagem = Constantes.InformacaoNaoEncontrada };
-                return new RetornoModelo { Status = true, objeto = retorno };
+                return new RetornoModelo { Status = true, Objeto = retorno };
             }
             catch
             {
@@ -70,7 +70,7 @@ namespace ModeloNetCoreBiblioteca.Repositorio.Usuario
                 var client = new MongoClient(_conexao);
                 var collection = client.GetDatabase("seubanco").GetCollection<TokenModelo>("TokenModelo");
                 await collection.InsertOneAsync(tokenModelo);
-                return new RetornoModelo { Status = true, objeto = tokenModelo };
+                return new RetornoModelo { Status = true, Objeto = tokenModelo };
             }
             catch
             {

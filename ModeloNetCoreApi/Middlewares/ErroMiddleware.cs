@@ -34,7 +34,13 @@ namespace ModeloNetCoreApi.Middlewares
                 error = new RetornoModelo { Status = false, Mensagem = exception.Message };
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = StatusCodes.Status500InternalServerError;
-            await context.Response.WriteAsync(JsonSerializer.Serialize(error));
+            var serializeOptions = new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                WriteIndented = true
+            };
+
+            await context.Response.WriteAsync(JsonSerializer.Serialize(error, serializeOptions));
             return;
         }
     }

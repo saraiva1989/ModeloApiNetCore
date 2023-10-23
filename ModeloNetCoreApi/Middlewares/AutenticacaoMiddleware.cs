@@ -53,7 +53,7 @@ namespace ModeloNetCoreApi.Middlewares
                 context.Response.StatusCode = StatusCodes.Status401Unauthorized;
                 return;
             }
-            context.Items["usuario"] = usuario.objeto;
+            context.Items["usuario"] = usuario.Objeto;
             await _next.Invoke(context);
         }
     }

@@ -30,22 +30,22 @@ namespace ModeloNetCoreBiblioteca.Dominio.Usuario
             try
             {
                 var usuario = await _usuarioRepositorio.BuscarUsuarioPorEmail(Criptografia.EncryptString(email));
-                if (usuario.objeto == null || usuario?.objeto?.Senha != Criptografia.StringSha256Hash(senha))
+                if (usuario.Objeto == null || usuario?.Objeto?.Senha != Criptografia.StringSha256Hash(senha))
                     return new RetornoModelo { Status = false, Mensagem = Constantes.LoginSenhaIncorreto };
 
                 var timestamp = new DateTimeOffset(DateTime.UtcNow).ToUnixTimeSeconds();
-                UsuarioModelo usuarioToken = usuario.objeto;
+                UsuarioModelo usuarioToken = usuario.Objeto;
 
-                var token = Criptografia.StringSha256Hash(usuario?.objeto?.Email + timestamp);
+                var token = Criptografia.StringSha256Hash(usuario?.Objeto?.Email + timestamp);
                 var tokenModelo = new TokenModelo
                 {
                     Token = token,
                     ValidadeToken = DateTime.Now.AddDays(30),
-                    UsuarioEmail = usuario.objeto.Email,
+                    UsuarioEmail = usuario.Objeto.Email,
                 };
 
                 var retorno = await InserirTokens(tokenModelo);
-                return new RetornoModelo { Status = retorno.Status, objeto = retorno.objeto };
+                return new RetornoModelo { Status = retorno.Status, Objeto = retorno.Objeto };
             }
             catch 
             {
@@ -56,7 +56,7 @@ namespace ModeloNetCoreBiblioteca.Dominio.Usuario
         public async Task<RetornoModelo> InserirTokens(TokenModelo tokenModelo)
         {
             var retorno = await _usuarioRepositorio.InserirTokens(tokenModelo);
-            return new RetornoModelo { Status = retorno.Status, objeto = retorno.objeto };
+            return new RetornoModelo { Status = retorno.Status, Objeto = retorno.Objeto };
         }
 
 

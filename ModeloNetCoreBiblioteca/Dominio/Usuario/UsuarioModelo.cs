@@ -19,23 +19,20 @@ namespace ModeloNetCoreBiblioteca.Dominio.Usuario
         public string Nome { get; set; } = string.Empty;
         public string Usuario { get; set; } = string.Empty;
         [Required]
-        public string Email
-        {
-            get { return email; }
-            set {
-                Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-                Match match = regex.Match(value);
-                if (!match.Success & _id.Pid == 0)
-                    throw new Exception("Email inválido!");
-                email = value;
-            }
-        }
+        public string Email { get; set; } = string.Empty;
         public string Senha { get; set; } = string.Empty;
         public int Nivel { get; set; }
         public DateTime DataCadastro { get; set; }
         public bool UsuarioAtivo { get; set; }
         public DateTime DataAtivacao { get; set; }
         public string? ChaveAtivacao { get; set; }
+        public void ValidarEmail(string email)
+        {
+            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+            Match match = regex.Match(email);
+            if (!match.Success)
+                throw new Exception("Email inválido!");
+        }
     }
     public class TokenModelo
     {

@@ -21,6 +21,7 @@ namespace ModeloNetCoreBiblioteca.Dominio.Usuario
             usuario.ChaveAtivacao = Criptografia.StringSha256Hash(usuario.Email);
             usuario.Email = Criptografia.EncryptString(usuario.Email);
             usuario.Senha = Criptografia.StringSha256Hash(usuario.Senha);
+            usuario.DataCadastro = DateTime.Now;
             var cadastro = await _usuarioRepositorio.InserirAsync(usuario);
             return cadastro;
         }

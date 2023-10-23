@@ -21,6 +21,7 @@ namespace ModeloNetCoreApi.Controllers
         [Route("cadastrar")]
         public async Task<IActionResult> Cadastrar(UsuarioModelo usuario)
         {
+            usuario.ValidarEmail(usuario.Email);
             var emailExiste = await _usuarioServico.BuscarEmail(usuario.Email);
             if (emailExiste.Status)
             {
@@ -37,6 +38,7 @@ namespace ModeloNetCoreApi.Controllers
         [Route("autenticar")]
         public async Task<IActionResult> Autenticar(UsuarioModelo usuario)
         {
+            usuario.ValidarEmail(usuario.Email);
             var autenticado = await _usuarioServico.BuscarUsuarioPorEmail(usuario.Email, usuario.Senha);
             return Ok(autenticado);
         }
